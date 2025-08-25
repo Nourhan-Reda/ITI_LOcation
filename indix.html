@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FlexTask</title>
+</head>
+
+<body>
+    <section id="hero">
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Locations</a></li>
+            </ul>
+        </nav>
+        <div class="hero containar" id="home">
+            <div>
+                <h1> Hello;<span></span> </h1>
+                <h1>*....In<span></span></h1>
+                <h1>ITI Locations..*<span></span></h1>
+                <a href="#" tybe="button" class="btn">Register </a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="main-text">
+            <h1 class="main-head">ITI Locations</h1>
+        </div>
+        <div class="iti-location">
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5515444.904168239!2d29.316086240589893!3d27.499374386645034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siti%20location%20all%20over%20egypt!5e1!3m2!1sen!2seg!4v1753988881927!5m2!1sen!2seg"
+                    width="400" height="350" style="border: 5px solid crimson; ;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="f-text">
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i> ITI-Smart
+                    Village</p>
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i> ITI-Assuit
+                </p>
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i>
+                    ITI-Ismailia</p>
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i>
+                    ITI-Menofia</p>
+            </div>
+            <div class="s-text">
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i>
+                    ITI-Alexandria
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i> ITI-Aswan
+                </p>
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i>
+                    ITI-Mansoura</p>
+                <p id="country"><i class="fa fa-map-marker" style="font-size:25px;color:rgb(95, 95, 95)"></i>
+                    ITI-Minya</p>
+                <div class="ch-btn">
+                    <button id="btn1">Main Branch</button>
+                    <button id="btn2">Branch</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="footer">
+            <div class="contact">
+                <h1 class="h-footer">CONTACT US</h1>
+                <p> <i class='far fa-circle'></i>Over 30 years, ITI has kept updating its training portfolio
+                    through continuous</p>
+                <p><i class="fa fa-phone"></i>+201068956764</p>
+                <p><i class="fa fa-envelope"></i>
+                    ITIinfo@iti.gov.eg</p>
+            </div>
+            <div class="media">
+                <h1 class="h-footer">FOLLOW US</h1>
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube-play"></i>
+            </div>
+        </div>
+    </section>
+    <script>
+        const changeColor = document.querySelectorAll("#country");
+        document.getElementById("btn1").addEventListener("click", () => {
+            changeColor.forEach(el => { el.style.color = "crimson" });
+        });
+        document.getElementById("btn2").addEventListener("click", () => {
+            changeColor.forEach(el => { el.style.color = "black" });
+        });
+    </script>
+</body>
+
+</html>
